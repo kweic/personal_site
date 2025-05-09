@@ -12,7 +12,7 @@ const About: React.FC = () => {
 
   const handleScroll = () => {
     const sections = ['about', 'skills', 'projects', 'interests', 'resume'];
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY + 300;
 
     for (const section of sections) {
       const element = document.getElementById(section);

@@ -10,7 +10,7 @@ const interests: Interest[] = [
   {
     emoji: '🌊',
     name: 'Swimming',
-    description: 'Competitive swimming in highschool, currently on the Masters team.',
+    description: 'Competitive swimming in high school, currently on the Masters team.',
   },
   {
     emoji: '💿',
@@ -24,8 +24,8 @@ const interests: Interest[] = [
   },
   {
     emoji: '🔭',
-    name: 'Sci-fi',
-    description: 'Grew up on Star Wars. I enjoy sci-fi books, movies, and TV shows.',
+    name: 'Sci-fi / Fantasy',
+    description: 'Grew up on Star Wars and The NeverEnding Story. I enjoy sci-fi books, movies, and TV shows.',
   },
   {
     emoji: '💻',
@@ -44,7 +44,6 @@ const Interests: React.FC = () => {
   return (
     <div className="interests-section">
       <h2>Interests</h2>
-      <div className="flicker-line"></div>
       <div className="interests-grid">
         {interests.map(interest => (
           <div key={interest.name} className="interest-item">
