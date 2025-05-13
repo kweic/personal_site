@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePDF from '../assets/Kevin_Weichel_Software_Developer_resume.pdf';
+import resumePDF from '../assets/KevinWeichel_SoftwareDeveloper_resume.pdf';
 
 interface Experience {
   title: string;
