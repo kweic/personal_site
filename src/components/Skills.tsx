@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
 
   return (
     <div className="skills-section">
-      <h2>Skills</h2>
+      <h2>Skills & Technologies</h2>
       <div className="skills-container">
         {categories.map(category => (
           <div key={category} className="skill-category">

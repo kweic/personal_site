@@ -23,7 +23,7 @@ const interests: Interest[] = [
   {
     emoji: '💿',
     name: 'Music',
-    description: 'Always looking for new favorites.',
+    description: 'Always looking for new music. Favorites include Radiohead, Aphex Twin, and Animal Collective.',
     link: {
         url: 'https://open.spotify.com/user/128227629?si=cd3377cde0034e5d',
         text: 'Spotify',
@@ -32,7 +32,7 @@ const interests: Interest[] = [
   {
     emoji: '👟',
     name: 'Running',
-    description: 'The best way to find euphoria.',
+    description: '5ks a Marathon, and everything in between.',
     link: {
       url: 'https://www.strava.com/athletes/62699518',
       text: 'Strava'
@@ -41,7 +41,7 @@ const interests: Interest[] = [
   {
     emoji: '🔭',
     name: 'Sci-fi / Fantasy',
-    description: 'Grew up on Star Wars and The NeverEnding Story. I enjoy sci-fi books, movies, and TV shows.',
+    description: 'Star Wars and The NeverEnding Story were my childhood favorites. I enjoy sci-fi books, movies, and TV shows.',
   },
   {
     emoji: '💻',

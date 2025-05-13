@@ -5,8 +5,8 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  background-color: #0a192f;
-  color: #ccd6f6;
+  background: linear-gradient(135deg, #0a192f 0%, #112240 100%);
+  color: #ffffff;
 }
 
 .sidebar {
@@ -15,8 +15,8 @@
   top: 0;
   width: 300px;
   height: 100vh;
-  background-color: #112240;
-  /* border-right: 1px solid #1d2d50; */
+  border-right: 1px solid #0e2e75;
+  background: linear-gradient(180deg, #112240 0%, #0a192f 100%);
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -36,19 +36,23 @@
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #64ffda;
-  box-shadow: 0 0 10px rgba(100, 255, 218, 0.2);
+  border: 2px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, #64ffda, #0a192f) border-box;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
 
 .profile-image:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, #64ffda, #0a192f, #64ffda) border-box;
 }
 
 .profile-name {
-  color: #ccd6f6;
+  color: #ffffff;
   font-size: 1.8rem;
   margin: 1rem 0;
   text-align: center;
@@ -75,7 +79,7 @@
 }
 
 .nav-item {
-  color: #8892b0;
+  color: #a8b4d8;
   text-decoration: none;
   padding: 0.8rem 1rem;
   border-radius: 4px;
@@ -117,9 +121,11 @@
 .projects-section,
 .interests-section,
 .resume-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
   background-color: #112240;
   border-radius: 4px;
-  border: 1px solid #1d2d50;
+  border: 1px solid #0e2e75;
   padding: 2rem;
   margin-bottom: 2rem;
   transition: all 0.3s ease;
@@ -141,23 +147,15 @@
 .resume-section h2 {
   margin-top: 0;
   margin-bottom: 1.5rem;
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-weight: 600;
 }
 
 .bio-section {
-  text-align: left;
-}
-
-.bio-section h2,
-.skills-section h2,
-.interests-section h2,
-.resume-section h2,
-.projects-section h2 {
-  text-align: left;
-  color: #ccd6f6;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-weight: 600;
+  margin-top: 0;
 }
 
 .bio-container {
@@ -173,7 +171,7 @@
 }
 
 .bio-content {
-  color: #8892b0;
+  color: #a8b4d8;
   font-size: 1.1rem;
   line-height: 1.7;
   font-family: 'SF Mono', 'Fira Code', monospace;
@@ -196,16 +194,18 @@
 }
 
 .skill-category {
-  background-color: rgba(100, 255, 218, 0.05);
   padding: 1.5rem;
   border-radius: 4px;
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(100, 255, 218, 0.1)) border-box;
   transition: all 0.3s ease;
 }
 
 .skill-category:hover {
   transform: translateY(-2px);
-  background-color: rgba(100, 255, 218, 0.08);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
 }
 
 .skill-category h3 {
@@ -224,17 +224,18 @@
 }
 
 .skill-item {
-  background-color: rgba(100, 255, 218, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
   transition: all 0.3s ease;
 }
 
 .skill-item:hover {
   transform: translateY(-2px);
-  background-color: rgba(100, 255, 218, 0.15);
-  border-color: rgba(100, 255, 218, 0.3);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.4), rgba(100, 255, 218, 0.2)) border-box;
 }
 
 .skill-name {
@@ -243,7 +244,6 @@
   font-weight: 500;
   font-family: 'SF Mono', 'Fira Code', monospace;
 }
-
 
 .interests-section {
   margin-top: 3rem;
@@ -264,15 +264,17 @@
   gap: 1.5rem;
   transition: all 0.3s ease;
   padding: 1.5rem;
-  background-color: rgba(100, 255, 218, 0.05);
   border-radius: 4px;
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(100, 255, 218, 0.1)) border-box;
   text-align: left;
 }
 
 .interest-item:hover {
   transform: translateX(5px);
-  background-color: rgba(100, 255, 218, 0.08);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
 }
 
 .interest-emoji {
@@ -285,7 +287,7 @@
 }
 
 .interest-name {
-  color: #ccd6f6;
+  color: #ffffff;
   font-size: 1.1rem;
   font-weight: 600;
   font-family: 'SF Mono', 'Fira Code', monospace;
@@ -293,7 +295,7 @@
 }
 
 .interest-description {
-  color: #8892b0;
+  color: #a8b4d8;
   font-size: 0.9rem;
   line-height: 1.5;
   font-family: 'SF Mono', 'Fira Code', monospace;
@@ -307,15 +309,17 @@
   font-size: 0.9rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
   padding: 0.5rem 1rem;
-  border: 1px solid rgba(100, 255, 218, 0.2);
   border-radius: 4px;
-  background-color: rgba(100, 255, 218, 0.05);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
   transition: all 0.3s ease;
   margin-top: 1rem;
 }
 
 .interest-link:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.4), rgba(100, 255, 218, 0.2)) border-box;
   transform: translateY(-2px);
 }
 
@@ -325,8 +329,11 @@
 }
 
 .resume-pdf-container {
-  background-color: rgba(100, 255, 218, 0.05);
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.05) 0%, rgba(100, 255, 218, 0.02) 100%);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(100, 255, 218, 0.1)) border-box;
   height: 800px;
   width: 100%;
   overflow: hidden;
@@ -336,7 +343,6 @@
   width: 100%;
   height: 100%;
   border: none;
-  background-color: #ffffff;
 }
 
 .projects-section {
@@ -351,15 +357,19 @@
 }
 
 .project-card {
-  background-color: rgba(100, 255, 218, 0.05);
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.05) 0%, rgba(100, 255, 218, 0.02) 100%);
   border-radius: 4px;
-  border: 1px solid rgba(100, 255, 218, 0.1);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(100, 255, 218, 0.1)) border-box;
   transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-2px);
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
 }
 
 .project-link {
@@ -391,7 +401,7 @@
 }
 
 .project-content h3 {
-  color: #ccd6f6;
+  color: #ffffff;
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
@@ -399,7 +409,7 @@
 }
 
 .project-description {
-  color: #8892b0;
+  color: #a8b4d8;
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -414,13 +424,15 @@
 }
 
 .technology-tag {
-  background-color: rgba(100, 255, 218, 0.1);
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(100, 255, 218, 0.05) 100%);
   color: #64ffda;
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
   font-size: 0.8rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
-  border: 1px solid rgba(100, 255, 218, 0.2);
+  border: 1px solid transparent;
+  background: linear-gradient(#112240, #112240) padding-box,
+              linear-gradient(135deg, rgba(100, 255, 218, 0.3), rgba(100, 255, 218, 0.1)) border-box;
 }
 
 @media (max-width: 768px) {
@@ -432,7 +444,6 @@
     position: relative;
     width: 100%;
     height: auto;
-    border-right: none;
     border-bottom: 1px solid #1d2d50;
   }
 

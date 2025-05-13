@@ -9,7 +9,7 @@ const Bio: React.FC = () => {
 
   return (
     <div className="bio-section">
-      <h2>About Me</h2>
+      {/* <h2>About Me</h2> */}
       <div className="bio-container">
         <div className="bio-content">
           <p className="bio-text">{bioText}</p>
