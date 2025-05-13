@@ -1,20 +1,6 @@
 import React from 'react';
 import resumePDF from '../assets/KevinWeichel_SoftwareDeveloper_resume.pdf';
 
-interface Experience {
-  title: string;
-  company: string;
-  period: string;
-  description: string[];
-}
-
-interface Education {
-  degree: string;
-  school: string;
-  period: string;
-  description?: string;
-}
-
 const Resume: React.FC = () => {
   return (
     <div className="resume-section">

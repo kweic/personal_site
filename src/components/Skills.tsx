@@ -11,6 +11,7 @@ const skills: Skill[] = [
   { name: 'Ruby', category: 'Languages' },
   { name: 'Java', category: 'Languages' },
   { name: 'SQL', category: 'Languages' },
+
   { name: 'React', category: 'Front-end' },
   { name: 'React Native', category: 'Front-end' },
   { name: 'Jest', category: 'Front-end' },
@@ -18,10 +19,12 @@ const skills: Skill[] = [
   { name: 'JSP', category: 'Front-end' },
   { name: 'HTML/CSS', category: 'Front-end' },
   { name: 'Tailwind', category: 'Front-end' },
+
   { name: 'Ruby on Rails', category: 'Backend' },
   { name: 'Spring', category: 'Backend' },
   { name: 'NestJS', category: 'Backend' },
   { name: 'ActiveRecord', category: 'Backend' },
+
   { name: 'Git', category: 'DevOps & Tools' },
   { name: 'CircleCI', category: 'DevOps & Tools' },
   { name: 'Postgres', category: 'DevOps & Tools' },

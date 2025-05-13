@@ -26,7 +26,7 @@ const interests: Interest[] = [
     description: 'Always looking for new favorites.',
     link: {
         url: 'https://open.spotify.com/user/128227629?si=cd3377cde0034e5d',
-        text: 'Find me on Spotify',
+        text: 'Spotify',
     },
   },
   {
@@ -35,7 +35,7 @@ const interests: Interest[] = [
     description: 'The best way to find euphoria.',
     link: {
       url: 'https://www.strava.com/athletes/62699518',
-      text: 'Follow me on Strava'
+      text: 'Strava'
     }
   },
   {
@@ -49,13 +49,17 @@ const interests: Interest[] = [
     description: 'Started playing with code as a teenager making games and websites, now coding professionally.',
     link: {
         url: 'https://github.com/kweic',
-        text: 'Visit my Github'
+        text: 'Github'
       }
   },
   {
     emoji: '🖊️',
     name: 'Art',
     description: 'Avid painter in my teens, now I enjoy visiting museums and galleries.',
+    link: {
+        url: 'https://kweichel.artstation.com/pages/portfolio',
+        text: 'ArtStation'
+    }
   }
 ];
 

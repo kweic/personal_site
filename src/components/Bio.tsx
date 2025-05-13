@@ -5,7 +5,7 @@ const Bio: React.FC = () => {
   const currentYear = new Date().getFullYear();
   const yearsOfExperience = currentYear - startYear;
 
-  const bioText = `As a teen I enjoyed making webpages and playing with Visual Basic to create small games. After getting heavily into painting in high school I found work as an Airbrush Artist at Cedar Point Amusement Park. I attended The Columbus College of Art & Design with an interest in 3D modeling and animation. I've since found my way back to the old passion of coding and have enjoyed working as a Software Developer for the last ${yearsOfExperience}+ years.`;
+  const bioText = `Growing up I enjoyed making webpages and playing with Visual Basic to create small games. After getting heavily into painting in high school I found work as an Airbrush Artist at Cedar Point Amusement Park and attended The Columbus College of Art & Design with an interest in 3D modeling and animation. I've since found my way back to the old passion of coding and have enjoyed working as a Software Developer for the last ${yearsOfExperience}+ years.`;
 
   return (
     <div className="bio-section">
