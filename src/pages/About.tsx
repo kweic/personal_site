@@ -6,12 +6,13 @@ import Interests from '../components/Interests';
 import Resume from '../components/Resume';
 import Projects from '../components/Projects';
 import Profile from '../components/Profile';
+import Experience from '../components/Experience';
 
 const About: React.FC = () => {
   const [activeSection, setActiveSection] = useState('about');
 
   const handleScroll = () => {
-    const sections = ['about', 'skills', 'projects', 'interests', 'resume'];
+    const sections = ['about', 'skills', 'experience', 'projects', 'interests', 'resume'];
     const scrollPosition = window.scrollY + 300;
 
     for (const section of sections) {
@@ -58,6 +59,13 @@ const About: React.FC = () => {
             Skills
           </a>
           <a
+            href="#experience"
+            className={`nav-item ${activeSection === 'experience' ? 'active' : ''}`}
+            onClick={() => scrollToSection('experience')}
+          >
+            Experience
+          </a>
+          <a
             href="#resume"
             className={`nav-item ${activeSection === 'resume' ? 'active' : ''}`}
             onClick={() => scrollToSection('resume')}
@@ -86,6 +94,9 @@ const About: React.FC = () => {
         </section>
         <section id="skills">
           <Skills />
+        </section>
+        <section id="experience">
+          <Experience />
         </section>
         <section id="resume">
           <Resume />
