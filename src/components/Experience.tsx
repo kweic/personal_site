@@ -6,7 +6,8 @@ import manifestLogo from '../assets/manifest-solutions.png';
 interface Role {
   title: string;
   details: string;
-  years: string;
+  dateRange: string;
+  duration: string;
 }
 
 interface Company {
@@ -28,7 +29,8 @@ const Experience: React.FC = () => {
         {
           title: 'Software Engineer II',
           details: 'Full-Stack Development primarily working on the Onboarding funnel which includes landing page and error pages with routing, questions flow, answer review page, coverage customization and selections, presenting prices and checkout.',
-          years: '2022 - 2025 3yrs 2 mos'
+          dateRange: '2022 - 2025',
+          duration: '3yrs 2mos'
         }
       ]
     },
@@ -41,7 +43,8 @@ const Experience: React.FC = () => {
         {
           title: 'Software Engineer II',
           details: 'Contributed to front-end and backend development across a variety of projects including flagship and experimental. Work included some leading projects, both solo and team work on mobile and desktop applications.',
-          years: '2019 - 2022 2yrs 11mos'
+          dateRange: '2019 - 2022',
+          duration: '2yrs 11mos'
         }
       ]
     },
@@ -54,7 +57,8 @@ const Experience: React.FC = () => {
         {
           title: 'Full Stack Developer',
           details: 'Consultant for Columbus City Schools - Developed and led internal & external facing apps for student and administration users.',
-          years: '2017 - 2019 2yrs 3mos'
+          dateRange: '2017 - 2019',
+          duration: '2yrs 3mos'
         }
       ]
     }
@@ -66,26 +70,29 @@ const Experience: React.FC = () => {
       <div className="companies-grid">
         {companies.map((company) => (
           <div key={company.name} className="company-container">
-            <a
-              href={company.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="company-card"
-            >
-              <div className="company-image-container">
+            <div className="company-card">
+              <a
+                href={company.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="company-image-container"
+              >
                 <img src={company.image} alt={`${company.name} logo`} className="company-image" />
-              </div>
+              </a>
               <div className="company-content">
                 <h3>{company.name}</h3>
                 <p>{company.description}</p>
               </div>
-            </a>
+            </div>
             <div className="roles-container">
               {company.roles.map((role, index) => (
                 <div key={index} className="role-item">
                   <div className="role-header">
                     <h4 className="role-title">{role.title}</h4>
-                    <span className="role-years">{role.years}</span>
+                    <div className="role-timing">
+                      <span className="role-date-range">{role.dateRange}</span>
+                      <span className="role-duration">{role.duration}</span>
+                    </div>
                   </div>
                   <p className="role-details">{role.details}</p>
                 </div>

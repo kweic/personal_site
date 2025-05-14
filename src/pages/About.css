@@ -465,16 +465,13 @@
 .company-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .company-card {
-  text-decoration: none;
-  color: inherit;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   border: 1px solid transparent;
   background: linear-gradient(#112240, #112240) padding-box,
               linear-gradient(135deg, rgba(100, 255, 218, 0.2), rgba(100, 255, 218, 0.1)) border-box;
@@ -484,11 +481,13 @@
 
 .roles-container {
   padding: 1.5rem;
-  border-radius: 4px;
+  border-radius: 0 0 4px 4px;
   border: 1px solid transparent;
+  border-top: none;
   background: linear-gradient(#112240, #112240) padding-box,
               linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(100, 255, 218, 0.05)) border-box;
-  margin-left: 200px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .role-item {
@@ -514,7 +513,20 @@
   font-weight: 600;
 }
 
-.role-years {
+.role-timing {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.role-date-range {
+  color: #a8b4d8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.role-duration {
   color: #64ffda;
   font-size: 0.9rem;
   font-family: 'SF Mono', 'Fira Code', monospace;
@@ -541,17 +553,22 @@
   justify-content: center;
   background: rgba(100, 255, 218, 0.05);
   flex-shrink: 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.company-image-container:hover {
+  background: rgba(100, 255, 218, 0.1);
 }
 
 .company-image {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  /* opacity: 0.95; */
   transition: all 0.3s ease;
 }
 
-.company-card:hover .company-image {
+.company-image-container:hover .company-image {
   opacity: 1;
   transform: scale(1.05);
 }
@@ -561,19 +578,11 @@
   flex: 1;
 }
 
-.company-content h3 {
-  color: #ffffff;
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-weight: 600;
-}
-
-.company-content p {
+.company-description {
   color: #a8b4d8;
   font-size: 0.9rem;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 1.5rem 0;
   font-family: 'SF Mono', 'Fira Code', monospace;
 }
 
